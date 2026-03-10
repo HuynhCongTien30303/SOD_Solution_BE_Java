@@ -11,7 +11,6 @@ import web.internship.SODSolutions.dto.response.ApiResponse;
 import web.internship.SODSolutions.dto.response.ResProjectDTO;
 
 import web.internship.SODSolutions.services.ProjectService;
-import web.internship.SODSolutions.util.SecurityUtil;
 
 import java.util.List;
 

@@ -14,6 +14,10 @@ public interface PaymentMapper {
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "projectPhase", ignore = true)
     @Mapping(target = "paymentStatus", source = "paymentStatus", qualifiedByName = "stringToPaymentStatus")
+    @Mapping(target = "createdAt", ignore = true)
+    @Mapping(target = "updatedAt", ignore = true)
+    @Mapping(target = "createdBy", ignore = true)
+    @Mapping(target = "updatedBy", ignore = true)
     Payment toPayment(ReqPaymentDTO reqPaymentDTO);
 
     @Mapping(target = "paymentStatus", source = "paymentStatus", qualifiedByName = "paymentStatusToString")

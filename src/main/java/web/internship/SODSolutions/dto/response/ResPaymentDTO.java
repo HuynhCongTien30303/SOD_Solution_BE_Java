@@ -7,7 +7,6 @@ import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 import web.internship.SODSolutions.model.common.PaymentStatus;
 
-import java.math.BigDecimal;
 import java.time.Instant;
 import java.time.LocalDate;
 

@@ -8,7 +8,6 @@ import web.internship.SODSolutions.dto.request.ReqUpdateUserDTO;
 import web.internship.SODSolutions.dto.request.ReqUserDTO;
 import web.internship.SODSolutions.dto.response.ResUserDTO;
 import web.internship.SODSolutions.mapper.UserMapper;
-import web.internship.SODSolutions.model.Role;
 import web.internship.SODSolutions.model.User;
 import web.internship.SODSolutions.repository.RoleRepository;
 import web.internship.SODSolutions.repository.UserRepository;

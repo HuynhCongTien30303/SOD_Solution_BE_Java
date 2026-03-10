@@ -3,6 +3,7 @@ package web.internship.SODSolutions.model;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import web.internship.SODSolutions.model.common.Auditable;
 import web.internship.SODSolutions.model.common.ProjectStatus;
@@ -12,6 +13,7 @@ import java.util.List;
 
 @Entity
 @Data
+@EqualsAndHashCode(callSuper = false)
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "projects")

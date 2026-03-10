@@ -2,17 +2,18 @@ package web.internship.SODSolutions.model;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import web.internship.SODSolutions.model.common.Auditable;
 import web.internship.SODSolutions.model.common.PaymentStatus;
 
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 
 
 @Entity
 @Data
+@EqualsAndHashCode(callSuper = false)
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "payments")
