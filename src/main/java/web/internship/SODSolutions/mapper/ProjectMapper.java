@@ -19,6 +19,12 @@ public interface ProjectMapper {
     @Mapping(target = "contracts", ignore = true)
     @Mapping(target = "projectPhases", ignore = true)
     @Mapping(target = "status", source = "status", qualifiedByName = "stringToProjectStatus")
+    @Mapping(target = "createdAt", ignore = true)
+    @Mapping(target = "updatedAt", ignore = true)
+    @Mapping(target = "createdBy", ignore = true)
+    @Mapping(target = "updatedBy", ignore = true)
+    @Mapping(target = "rating", ignore = true)
+    @Mapping(target = "review", ignore = true)
     Project toProject(ReqProjectDTO reqProjectDTO);
 
     @Mapping(target = "status", source = "status", qualifiedByName = "projectStatusToString")

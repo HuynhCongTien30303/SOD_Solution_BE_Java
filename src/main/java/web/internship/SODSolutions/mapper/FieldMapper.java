@@ -10,6 +10,7 @@ import java.util.List;
 public interface FieldMapper {
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "projects", ignore = true)
+    @Mapping(target = "forms", ignore = true)
     Field toField(ResFieldDTO resFieldDTO);
 
     ResFieldDTO toResFieldDTO(Field field);

@@ -62,10 +62,6 @@ public class AuthService {
             throw new AppException("User is not active");
         }
 
-        if (userDB == null) {
-            throw new AppException("User not found");
-        }
-
         ResUserDTO user = userMapper.toResUserDTO(userDB);
         String accessToken = securityUtil.createAccessToken(userDB.getEmail());
         return ResLoginDTO.builder()

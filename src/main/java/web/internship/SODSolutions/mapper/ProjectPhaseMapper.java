@@ -14,6 +14,10 @@ public interface ProjectPhaseMapper {
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "project", ignore = true)
     @Mapping(target = "status", source = "status", qualifiedByName = "stringToPhaseStatus")
+    @Mapping(target = "startDate", source = "startDate")
+    @Mapping(target = "endDate", source = "endDate")
+    @Mapping(target = "createdAt", ignore = true)
+    @Mapping(target = "payment", ignore = true)
     ProjectPhase toProjectPhase(ReqProjectPhaseDTO reqProjectPhaseDTO);
 
     @Mapping(target = "status", source = "status", qualifiedByName = "phaseStatusToString")

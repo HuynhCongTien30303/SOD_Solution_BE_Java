@@ -15,7 +15,6 @@ import web.internship.SODSolutions.repository.UserRepository;
 import web.internship.SODSolutions.util.SecurityUtil;
 import web.internship.SODSolutions.util.error.AppException;
 
-import java.util.ArrayList;
 import java.util.List;
 
 

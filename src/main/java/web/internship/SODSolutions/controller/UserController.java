@@ -6,14 +6,11 @@ import lombok.experimental.FieldDefaults;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import web.internship.SODSolutions.dto.request.ReqChangePasswordDTO;
-import web.internship.SODSolutions.dto.request.ReqLoginDTO;
 import web.internship.SODSolutions.dto.request.ReqUpdateUserDTO;
 import web.internship.SODSolutions.dto.request.ReqUserDTO;
 import web.internship.SODSolutions.dto.response.ApiResponse;
-import web.internship.SODSolutions.dto.response.ResLoginDTO;
 import web.internship.SODSolutions.dto.response.ResUserDTO;
 import web.internship.SODSolutions.services.UserService;
-import web.internship.SODSolutions.util.error.AppException;
 
 import java.util.List;
 
